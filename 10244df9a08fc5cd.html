@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inline Screens Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><a href="#home">Inline Shop</a><nav><a href="#about">About</a><a href="contact.html">Contact</a></nav></header>
+  <div data-screen="home">
+    <section class="hero"><h1>Home screen</h1><p>Four products for the test grid.</p></section>
+    <section class="products"><h2>Featured products</h2><div class="product-grid">
+      <article class="product-card"><h3>Product One</h3><p>First item details.</p></article>
+      <article class="product-card"><h3>Product Two</h3><p>Second item details.</p></article>
+      <article class="product-card"><h3>Product Three</h3><p>Third item details.</p></article>
+      <article class="product-card"><h3>Product Four</h3><p>Fourth item details.</p></article>
+    </div></section>
+  </div>
+  <div data-screen="about"><section class="hero"><h1>About screen</h1><p>About our small shop.</p></section></div>
+  <div data-screen="contact"><section class="hero"><h1>Contact screen</h1><p data-goto="home">Get in touch with our team.</p></section></div>
+  <footer class="site-footer"><p>Shared footer</p><a href="about.html">About this shop</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
